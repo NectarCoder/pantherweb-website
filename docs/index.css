@@ -12,3 +12,30 @@ body {
 	font-family: var(--root-font-family);
 	margin: auto;
 }
+
+#pw-header {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#pw-header-inner {
+	display: flex;
+	flex-direction: row;
+	flex-flow: column;
+	position: relative;
+}
+
+#pw-header-title {
+	margin: 0;
+	padding: 0;
+}
+
+#pw-header-title > a {
+	color: inherit;
+	display: inline-block;
+	font-size: 0.8em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 12px 18px;
+}
