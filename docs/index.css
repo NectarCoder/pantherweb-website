@@ -1,0 +1,14 @@
+@import "https://fonts.googleapis.com/css?family=Exo";
+
+:root {
+	--root-font-family: Exo, Helvetica, Arial, sans-serif;
+	--bg-color: rgb(156 156 156 / 1);
+	--fg-color: rgb(43 43 43 / 1);
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+	font-family: var(--root-font-family);
+	margin: auto;
+}
