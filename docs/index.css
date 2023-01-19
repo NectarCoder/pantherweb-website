@@ -60,9 +60,9 @@ body {
 #pw-nav-list {
 	display: flex;
 	list-style: none;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	gap: 0.1em;
-	justify-content: space-around;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
 }
