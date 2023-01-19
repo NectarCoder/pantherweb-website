@@ -14,21 +14,23 @@ body {
 }
 
 #pw-header {
-	position: absolute;
+	position: relative;
 	left: 0;
 	top: 0;
+	width: 100vw;
 }
 
 #pw-header-inner {
 	display: flex;
 	flex-direction: row;
 	flex-flow: column;
-	position: relative;
+	justify-content: space-between;
 }
 
 #pw-header-title {
 	margin: 0;
 	padding: 0;
+	flex-grow: 1;
 }
 
 #pw-header-title > a {
@@ -38,4 +40,20 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 12px 18px;
+}
+
+#pw-navigation-items {
+	flex-direction: row;
+	flex-flow: column;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#pw-navigation-items > .pw-navigation-item > .pw-navigation-link {
+	display: inline-block;
+	color: inherit;
+	padding: 16px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
