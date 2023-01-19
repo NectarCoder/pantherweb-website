@@ -23,7 +23,6 @@ body {
 #pw-header-inner {
 	display: flex;
 	flex-direction: row;
-	flex-flow: column;
 	justify-content: space-between;
 }
 
