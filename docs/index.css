@@ -1,58 +1,72 @@
 @import "https://fonts.googleapis.com/css?family=Exo";
 
 :root {
-	--root-font-family: Exo, Helvetica, Arial, sans-serif;
-	--bg-color: rgb(156 156 156 / 1);
-	--fg-color: rgb(43 43 43 / 1);
+	/* Light theme */
+	--bg-color__rgb: 210 210 235;
+	--bg-color: rgb(var(--bg-color__rgb) / 1);
+	--fg-color__rgb: 45 45 45;
+	--fg-color: rgb(var(--fg-color__rgb) / 1);
+	/* Dark theme */
+	--bg-color-dark__rgb: 65 65 65;
+	--bg-color-dark: rgb(var(--bg-color-dark__rgb) / 1);
+	--fg-color-dark__rgb: 215 215 215;
+	--fg-color-dark: rgb(var(--fg-color-dark__rgb) / 1);
+	/* Default options */
+	--font-family: Exo, Helvetica, Arial, sans-serif;
+	--root-font-size: 12px;
+
+	font-family: var(--font-family);
+	font-size: var(--root-font-size);
 }
 
 body {
 	background-color: var(--bg-color);
 	color: var(--fg-color);
-	font-family: var(--root-font-family);
 	margin: auto;
 }
 
 #pw-header {
-	position: relative;
-	left: 0;
-	top: 0;
 	width: 100vw;
-}
-
-#pw-header-inner {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	gap: 0.1em;
 }
 
-#pw-header-title {
+#pw-hero {
+	min-height: 35px;
+	display: flex;
+	align-content: center;
+}
+
+#pw-heading {
+	font-size: 1.4em;
 	margin: 0;
 	padding: 0;
-	flex-grow: 1;
-}
-
-#pw-header-title > a {
-	color: inherit;
-	display: inline-block;
-	font-size: 0.8em;
-	text-decoration: none;
+	text-align: center;
 	text-transform: uppercase;
-	padding: 12px 18px;
 }
 
-#pw-navigation-items {
-	flex-direction: row;
-	flex-flow: column;
+#pw-nav {
+	position: relative;
+}
+
+#pw-nav-list {
 	list-style: none;
+	flex-flow: row wrap;
+	gap: 0.1em;
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 }
 
-#pw-navigation-items > .pw-navigation-item > .pw-navigation-link {
+#pw-nav-list > .pw-nav-item {
+	font-size: 0.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#pw-nav-list > .pw-nav-item > .pw-nav-link {
 	display: inline-block;
-	color: inherit;
 	padding: 16px 25px;
 	text-decoration: none;
-	text-transform: uppercase;
 }
