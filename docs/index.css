@@ -58,8 +58,9 @@ body {
 }
 
 #pw-nav-list {
+	display: flex;
 	list-style: none;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	gap: 0.1em;
 	justify-content: space-around;
 	margin: 0;
@@ -69,6 +70,7 @@ body {
 #pw-nav-list > .pw-nav-item {
 	font-size: 0.8em;
 	font-weight: bold;
+	position: relative;
 	text-transform: uppercase;
 }
 
