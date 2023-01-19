@@ -13,7 +13,7 @@
 	--fg-color-dark: rgb(var(--fg-color-dark__rgb) / 1);
 	/* Default options */
 	--font-family: Exo, Helvetica, Arial, sans-serif;
-	--root-font-size: 12px;
+	--root-font-size: 16px;
 
 	font-family: var(--font-family);
 	font-size: var(--root-font-size);
@@ -33,17 +33,24 @@ body {
 }
 
 #pw-hero {
-	min-height: 35px;
+	min-height: 75px;
 	display: flex;
-	align-content: center;
+	flex-flow: row wrap;
+	place-content: center;
 }
 
 #pw-heading {
-	font-size: 1.4em;
+	font-size: 1.6em;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+#pw-heading-link {
+	padding: 10px 17px;
+	text-decoration: none;
+	color: inherit;
 }
 
 #pw-nav {
@@ -66,6 +73,7 @@ body {
 }
 
 #pw-nav-list > .pw-nav-item > .pw-nav-link {
+	color: inherit;
 	display: inline-block;
 	padding: 16px 25px;
 	text-decoration: none;
