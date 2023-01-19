@@ -6,6 +6,10 @@
 	--bg-color: rgb(var(--bg-color__rgb) / 1);
 	--fg-color__rgb: 45 45 45;
 	--fg-color: rgb(var(--fg-color__rgb) / 1);
+	--header-color__rgb: 186 186 220;
+	--header-color: rgb(var(--header-color__rgb) / 1);
+	--header-fg-color__rgb: 26 26 26;
+	--header-fg-color: rgb(var(--header-fg-color__rgb) / 1);
 	/* Dark theme */
 	--bg-color-dark__rgb: 65 65 65;
 	--bg-color-dark: rgb(var(--bg-color-dark__rgb) / 1);
@@ -27,6 +31,7 @@ body {
 
 #pw-header {
 	width: 100vw;
+	background-color: var(--header-color);
 	display: flex;
 	flex-direction: column;
 	gap: 0.1em;
@@ -48,7 +53,7 @@ body {
 }
 
 #pw-heading-link {
-	padding: 10px 17px;
+	padding: 10px 18px;
 	text-decoration: none;
 	color: inherit;
 }
@@ -68,9 +73,8 @@ body {
 }
 
 #pw-nav-list > .pw-nav-item {
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight: bold;
-	position: relative;
 	text-transform: uppercase;
 }
 
@@ -79,4 +83,10 @@ body {
 	display: inline-block;
 	padding: 16px 25px;
 	text-decoration: none;
+	transition: all 500ms ease-in-out;
+}
+
+#pw-nav-list > .pw-nav-item > .pw-nav-link:hover {
+	color: var(--header-color);
+	background-color: var(--header-fg-color);
 }
