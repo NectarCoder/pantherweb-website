@@ -113,7 +113,7 @@ body {
 	}
 }
 
-#pw-nav-list > .pw-nav-item > .pw-nav-link:hover {
+#pw-nav-list > .pw-nav-item:hover > .pw-nav-link {
 	color: var(--header-color);
 	background-color: var(--header-fg-color);
 }
@@ -125,6 +125,7 @@ body {
 	top: 100%;
 	width: 100vw;
 	background-color: var(--header-fg-color);
+	color: var(--header-color);
 }
 
 #pw-nav-list .pw-subnav > .pw-subnav-list {
