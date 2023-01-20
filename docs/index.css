@@ -109,3 +109,28 @@ body {
 	color: var(--header-color);
 	background-color: var(--header-fg-color);
 }
+
+#pw-nav-list .pw-subnav {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100vw;
+}
+
+#pw-nav-list .pw-subnav > .pw-subnav-list {
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+#pw-nav-list .pw-subnav > .pw-subnav-list > .pw-subnav-item {
+	flex-grow: 1;
+}
+
+#pw-nav-list .pw-subnav > .pw-subnav-list > .pw-subnav-item > .pw-subnav-link {
+	color: inherit;
+	display: inline-block;
+	padding: 10px 18px;
+	text-decoration: none;	
+}
