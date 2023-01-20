@@ -133,15 +133,12 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-}
-
-#pw-nav-list .pw-subnav > .pw-subnav-list > .pw-subnav-item {
-	flex-grow: 1;
+	width: 100%;
 }
 
 #pw-nav-list .pw-subnav > .pw-subnav-list > .pw-subnav-item > .pw-subnav-link {
 	color: inherit;
 	display: inline-block;
-	padding: 10px 18px;
+	padding: 14px 20px;
 	text-decoration: none;	
 }
