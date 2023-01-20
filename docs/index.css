@@ -15,6 +15,10 @@
 	--bg-color-dark: rgb(var(--bg-color-dark__rgb) / 1);
 	--fg-color-dark__rgb: 215 215 215;
 	--fg-color-dark: rgb(var(--fg-color-dark__rgb) / 1);
+	--header-color-dark__rgb: 35 35 58;
+	--header-color-dark: rgb(var(--header-color-dark__rgb) / 1);
+	--header-fg-color-dark__rgb: 196 196 200;
+	--header-fg-color-dark: rgb(var(--header-fg-color-dark__rgb) / 1);
 	/* Default options */
 	--font-family: Exo, Helvetica, Arial, sans-serif;
 	--root-font-size: 16px;
@@ -91,6 +95,10 @@ body {
 	text-transform: uppercase;
 }
 
+#pw-nav-list > .pw-nav-item:hover > .pw-subnav {
+	display: flex;
+}
+
 #pw-nav-list > .pw-nav-item > .pw-nav-link {
 	color: inherit;
 	display: inline-block;
@@ -111,6 +119,7 @@ body {
 }
 
 #pw-nav-list .pw-subnav {
+	display: none;
 	position: absolute;
 	left: 0;
 	top: 100%;
