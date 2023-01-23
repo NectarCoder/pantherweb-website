@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Exo";
+
 :root {
 	/* Light mode */
 	--bg-color-light: #ecf4fa;
@@ -39,7 +41,7 @@ body {
 	margin: auto;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	body {
 		--bg-color: var(--bg-color-dark, var(--bg-color-light));
 		--fg-color: var(--fg-color-dark, var(--fg-color-light));
