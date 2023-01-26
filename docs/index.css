@@ -128,6 +128,10 @@ body {
 	border-radius: var(--nav-border-radius);
 }
 
+#pw-nav-list > .pw-nav-item:has(.pw-subnav):hover > .pw-nav-link {
+	border-radius: var(--nav-border-radius) var(--nav-border-radius) 0 0;
+}
+
 #pw-nav-list > .pw-nav-item > .pw-subnav { 
 	background-color: var(--header-color);
 	display: none;
